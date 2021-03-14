@@ -1,25 +1,59 @@
-@media (color) {
-  :root {
-    background: seashell;
-    color: #123;
+.bloom {
+  background: aquamarine;
+  color: black;
+}
+
+::selection {
+  background: hotpink;
+}
+
+:link,
+:visited {
+  color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bloom {
+    background: darkviolet;
+    color: mistyrose;
   }
 
   ::selection {
-    background: aqua;
-    color: #111;
-  }
-
-  :link,
-  :visited {
-    color: #808;
-  }
-
-  :focus {
-    outline-color: #505;
+    background: deeppink;
   }
 }
 
-:root {
-  font-family: sans-serif;
-  font-size: calc(1em + 1vmin);
+body,
+figure {
+  margin: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.blurb {
+  flex-basis: 50%;
+  font-family: monospace;
+}
+
+.barcode {
+  font-family: "Libre Barcode 39 Text", fantasy;
+}
+
+.chime {
+  font-size: 3vmax;
+}
+
+.dilate {
+  font-size: 18vmax;
+}
+
+@media (orientation: portrait) {
+  .bed {
+    transform: rotate(90deg);
+  }
 }
